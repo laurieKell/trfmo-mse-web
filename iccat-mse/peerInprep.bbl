@@ -1,0 +1,39 @@
+\begin{thebibliography}{5}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[et~al.(2014{\natexlab{a}})]{inprep2014elasticity}
+et~al.
+\newblock Elasticity and life history relationships.
+\newblock \emph{Journal To Be Decided}, x\penalty0 (xx):\penalty0 xxx--xxx,
+  2014{\natexlab{a}}.
+
+\bibitem[et~al.(2014{\natexlab{b}})]{inprep2014mseAlb}
+et~al.
+\newblock Evaluation of multiple objective, i.e. biological, ecosystem, social
+  and economic when developing a harvest control rule.
+\newblock \emph{Journal To Be Decided}, x\penalty0 (xx):\penalty0 xxx--xxx,
+  2014{\natexlab{b}}.
+
+\bibitem[et~al.(2014{\natexlab{c}})]{inprep2014power}
+et~al.
+\newblock The power of stock assessment.
+\newblock \emph{Journal To Be Decided}, x\penalty0 (xx):\penalty0 xxx--xxx,
+  2014{\natexlab{c}}.
+
+\bibitem[et~al.(2014{\natexlab{d}})]{inprep2014rum}
+et~al.
+\newblock Modelling fishers behaviour using a random utility model.
+\newblock \emph{Journal To Be Decided}, x\penalty0 (xx):\penalty0 xxx--xxx,
+  2014{\natexlab{d}}.
+
+\bibitem[et~al.(2014{\natexlab{e}})]{inprep2014shkRisk}
+et~al.
+\newblock From ecological risk asesssment to management.
+\newblock \emph{Journal To Be Decided}, x\penalty0 (xx):\penalty0 xxx--xxx,
+  2014{\natexlab{e}}.
+
+\end{thebibliography}

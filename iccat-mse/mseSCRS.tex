@@ -1,0 +1,417 @@
+\documentclass[a4paper,10pt]{article}
+%\documentclass[a4paper,10pt]{scrartcl}
+
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate}	
+\usepackage{hyperref}	
+
+\usepackage{multibib}
+\usepackage[authoryear, round]{natbib}
+\newcites{peer}{Peer Review}
+\newcites{scrs}{SCRS}
+
+\newcites{peerInprep}{Peer Review}
+\newcites{scrsInprep}{SCRS}
+
+\newcites{software}{R Packages}
+
+\usepackage[acronym,toc]{glossaries} % nomain, if you define glossaries in a file, and you use \include{INP-00-glossary}
+\input{glossary.tex}
+\makeglossaries
+
+
+\title{Summary of MSE Modelling Tasks}
+\author{} %Laurence T. Kell}
+\date{\today}
+
+\pdfinfo{%
+  /Title    (MSE Modelling Tasks)
+  /Author   (Laurence T. Kell)
+  /Creator  (Laurence T. Kell)
+  /Producer (Laurence T. Kell)
+  /Subject  (MSE)
+  /Keywords (MSE, Management, Risk, ICCAT, SCRS)
+}
+
+%\newbibliography{scrs}
+%\newbibliography{peer}
+%\newbibliography{scrsInprep}
+%\newbibliography{peerInprep}
+
+\begin{document}
+\maketitle
+
+There are various activities in the Workplans of the \gls{SCRS} related to the use of
+\gls{MSE} to respond to commission requests to provide robust advice and  develop
+\glspl{lrp} and \glspl{HCR}.
+
+In the Resolution on Best Available Science the Commission asked the \gls{SCRS} to
+ensure independent and objective scientific advice based on the best available and \textbf{peer-reviewed} 
+scientific deliverables. The Commission also reiterated its support of SCRS initiatives 
+to publish scientific findings in the \textbf{peer-reviewed} literature.
+
+The objective of this document is to identify activities related to MSE in the workplans of the SCRS  
+and propose collaborative papers (SCRS and \textbf{peer-reviewed}) to take this work forward. 
+The MSE work being conducted for bluefin tuna under the GBYP is summarised in a separate document.
+
+All software and code will be open source and made available on the \href{http://rscloud.iccat.int}{ICCAT cloud server} to 
+allow collaborative working both within the SCRC and between the scientific committees of other \glspl{RFMO}
+
+
+\newpage\tableofcontents
+
+\clearpage\newpage
+\section{Introduction}
+
+MSE allows a fuller consideration of uncertainty as required by the Precautionary Approach \citeppeer{garcia_precautionary_1996}
+and helps to provide stability since management objectives and how to evaluate how well alternative management actions meet 
+them are agreed through a dialogue between stakeholder. MSE can also be used to guide the scientific process by identifying where the
+reduction of scientific uncertainties will improve management and so help to ensure that expenditure is priortised to provide the best research,
+monitoring and enforcement \citeppeer{fromentin2014spectre}
+
+There are various activities in the Workplans of the SCRS related to the use of
+\gls{MSE} to help respond to commission requests to provide advice robust to uncertainty and to develop
+\glspl{lrp} and \glspl{HCR}.
+
+In the Resolution on Best Available Science the Commission asked the \gls{SCRS} to
+ensure independent and objective scientific advice based on the best available and \textbf{peer-reviewed} 
+scientific deliverables. The Commission also reiterated its support of SCRS initiatives 
+to publish scientific findings in the \textbf{peer-reviewed} literature.
+
+The objective of this document is to identify activities related to MSE in the workplans of the SCRS  
+and propose collaborative papers (SCRS and \textbf{peer-reviewed}) to take this work forward. 
+The MSE work being conducted for bluefin tuna under the GBYP is summarised in a separate document.
+
+All software and code will be open source and made available on the \href{http://rscloud.iccat.int}{ICCAT cloud server} to 
+allow collaborative working both within the SCRC and between the scientific committees of other \glspl{RFMO}
+
+
+%A variety of papers related to MSE have been written for ICCAT stocks, e.g. peer review papers looking at generic \citepscrs{kell_evaluation_2003} and
+%case specific \citeppeer{fromentin_consequences_2007} issues; examples for a variety of stocks \citepscrs{kell2010msealbn2}, \citepscrs{kell2012swo},\citepscrs{kell2012yft}; and documenting the development
+%of a \gls{lrp} as part of a \gls{HCR} for North Atlantic albacore \citepscrs{kell2013msealbn}. 
+
+\section{North Atlantic Albacore}
+
+The albacore Species Group conducted a preliminary MSE in 2013 \citepscrs{kell2013msealbn} and used this to propose a interim LRP for use
+as part of a HCR.  
+The HCR and the LRP was based upon a biomass dynamic stock assessment \citepscrs{kell2013mpalbn} and the \gls{OM} was 
+conditioned on a Multifan-CL stock assessment \citepscrs{kell2013msealbn}.
+This LRP was then used to produce a \gls{k2sm} and provide advice to the Commission \citepscrs{kell2013fwd}. 
+However, the HCR still needs to be fully evaluated.
+
+The MSE framework is implemented in R, \citepsoftware{R} using \gls{FLR} \citeppeer{kell_flr:_2007}. 
+The biomass dynamic model includes a variety of methods to estimate uncertainty, i.e. maximum likelihood,
+bootstrap and Bayesian \citepscrs{kell2013uncert} for use as part of a \gls{MP}.
+
+\subsection{Advice Framework}
+
+The SCRS workplan for North Atlantic albacore focuses on reducing uncertainty related to datasets and parameters and 
+developing management procedures that are robust to uncertainty. 
+
+Once developed the MSE can be used to identify research needs to reduce uncertainty and improve management advice.
+A first step is to finish the MSE started in 2013. This requires conditioning the OM on a variety of hypotheses using a factorial design as outlined in 
+\citepscrs{kell2013msealbn}. The MP is already implemented, see \citepscrs{kell2013fwd} for details.
+The conditioning work will be written up as an SCRS paper \citepscrsInprep{kell2015msealbn} and the MSE framework as a peer 
+review paper \citeppeerInprep{inprep2014mseAlb}  and its potential use to enhance dialogue as an SCRS paper \citeppeerInprep{inprep2014dialog}
+
+\subsection{Trade offs between Multiple Objectives}
+
+The peer review paper \citeppeerInprep{inprep2014mseAlb} will detail the use of a factorial design to condition the OM that will consider a broad range of 
+uncertainty in order to identify where research effort is best directed and to develop
+management procedures (HCRs and reference points) that are robust to them and can meet a variety of management objectives.
+ 
+\subsection{Enhanced Dialogue}
+
+An objective of the MSE is to allow the the process of updating management advice to be simplified, 
+and to enhance the dialogue with the Commission. Since management objectives will have to be explicitly stated
+and how well alternative management actions meet them will be agreed through a dialogue between stakeholder. 
+
+MSE will be use to help identify where the reduction of scientific uncertainties will improve management.
+An SCRS paper lead by EU-Spain, with involvement from
+the Secretariat and collaboration with the Swordfish Working Group
+will address these issues.
+
+
+
+\section{Swordfish}
+
+In the workplan for swordfish it was requested that all fleets should record detailed information (e.g. in logbook records) to quantify 
+which species or species-group are being targeted. In addition the compilation of detailed gear characteristics and fishing 
+strategy information (including time of set) are very strongly recommended in order to improve CPUE standardization.
+
+The Swordfish Species Group also recommended that methods be developed to evaluate indices of stock abundance based on fisheries dependent data, 
+e.g., by using simulation and cross validation based on detailed data such as log books and sales records.
+disaggregated trip data are important in order to better understand factors that bias CPUE series used to provide proxies of
+stocks abundance, e.g. due to changes in targeting in response to management and economic factors. 
+
+\subsection{Implementation Error}
+
+A peer review paper \citeppeerInprep{inprep2014rum} has been accepted for the American Fisheries Society Highly Migratory theme session in August  
+
+The advice framework of ICCAT is based on achieving Maximum Sustainable Yield (MSY) for each target species. However, 
+fisheries catch a mix of target and non-target species and fishing is an economic activity. This means that managers 
+need to consider economic as well as biological factors when deciding between different management options.
+For example to evaluate the potential effects of closing an area requires knowledge of where the effort will be 
+displaced to and hence the consequences for catch rates of target and non-target species and fishing costs. 
+To do this we use high resolution data from individual vessels with a discrete choice model to determine how fishers allocate 
+fishing effort; assuming that the utility of fishing in an area depends on previous catch rates and the 
+costs of fishing there. For example once an area for closure is identified then the model can be used to estimate 
+where effort will be re-distributed. This will allow the changes in
+catches, impacts on non-target species and profitability to be recalculated.
+The work will help develop methods for evaluating a range of management options and the trade-offs between them.
+Thereby helping in the development of a coherent framework for strategic planning and management.
+The study will also provide a better understanding how economic factors such as revenue and cost affect targeting and
+hence catch per unit effort series used as proxies of stock abundance.  
+
+\subsection{Mediterranean}
+
+Results of the previous assessment based on XSA were highly dependent on the selection of the plus group. It was
+recommended that additional methods should be explored based on the trials made during the 2013 assessment of the Atlantic stocks.
+
+It has also been proposed (as for North Atlantic albacore) to use a biomass dynamic model to formulate advice. As for albacore, this could provide the 
+basis  for a HCR that can be evaluate using MSE, based on the data-poor methodology proposed above. 
+
+There are two main tasks i.e. to comparing XSA with a statistically based method such as iSCAM and 
+the conditioning of an OM for use within an MSE. 
+
+It is therefore propose to use the data from the last XSA assessment to evaluate the benefits of using a statistically
+integrated model based on the actual data (e.g. size samples and Task I data). Hopefully this will allow XSA to be replaces 
+with more statistically based methods in the future and then to use iSCAM to condition the OM, this will be submitted as
+an SCRS paper \citepscrsInprep{inprep2015swom}
+
+
+\section{Data Poor}
+
+There are two areas of work, related to data poor stocks and methods, i.e. using MSE to
+develop management advice frameworks for i) the data poor tuna stocks (e.g. in the Mediterranean and
+South Atlantic) based on work done for data rich stocks (e.g. North Atlantic albacore); and 
+ii) by caught species such as sharks.
+
+\subsection{Comparison with Data Rich}
+
+\gls{MSE} will be used to evaluate alternative data-poor MPs for highly 
+migratory stocks. We do this by comparing candidate procedures to an idealised data-rich one
+using the benefit-cost ratio (BCR) as an indicator. The approach  
+allows the benefits of reducing uncertainty and the associated risks to the resources 
+and fishing communities to be evaluated. We then discuss the costs and benefits of alternative choices, 
+i.e. of investing in science, data collection or management, consistent with the \gls{PA} and the
+scientific advice framework of the \gls{tRFMOs}.
+
+\subsection{Risk Assessment}
+
+A peer review paper \citeppeerInprep{inprep2014shkRisk} along the following lines
+
+Sharks are a highly diverse group of fishes presenting an array of challenges for management and 
+conservation due to their biological and ecological characteristics. Particularly since they are 
+vulnerable to overexploitation and their populations are slow to rebuild. A diversity of sharks 
+species and fisheries are found within the convention areas of all the five tuna Regional Fisheries 
+Management Organisations (RFMOs) where they are caught in artisanal, commercial, and recreational 
+fisheries. However,in most cases, there is a general lack of data on catches, abundance, distribution, 
+life history and interactions with fisheries. All of which hinders an accurate estimation of catch 
+levels and impacts on their populations. Observer data with appropriate coverage levels is important for the successful monitoring of 
+shark populations. Here we present a simulation framework to help assess the power of different levels of 
+observer coverage to estimate catch rates and population trends.
+
+\section{Skipjack}
+
+Before performing a MSE it is important to explore the consequence of uncertainties in the data inputs on the stock diagnosis.
+A first step for skipjack will be to identify the impact of uncertainty on the K2SM.
+
+%I have the intention to gauge the uncertainty in task I by country on the total catch used in simple Surplus production model
+%As you known there are small but frequent changes in the species task 1 tables provided during SCRS.
+%My idea was to come back to the historic task-I tables and to perform the average differences by year between two successive 
+%SCRS years. We can use these yearly bias to build their histogram and then pick up an additional variability for each year in 
+%the most recent SCRS task-I table. By Monte Carlo simulation we can gauge the effect on MSY and related values. The same can 
+%be done on the successive standardized CPUE provided to SCRS every year and. so on
+%What do you think ? Could you help on this ?
+
+\section{Methods}
+
+Under the WGSAM there are many topics related to MSE, as well as acting as a reviewer of ongoing work. The group can help in developing new approaches.
+
+
+\subsection{Stock and Recruitment}
+
+Evaluate the evidence for stock recruitment relationships (SRR) in ICCAT stocks to develop hypotheses 
+for use when conditioning OMs, see \citepscrs{kell2014srr}. Turn this into a peer review paper.
+
+\subsection{Power Analysis}
+
+The intention is to write a peer review paper based on \citepscrs{kell2013uncert}, i.e. \citeppeerInprep{inprep2014power} That is to compare diiferent methods to 
+derive parameter uncertainty in stock assessment and discuss the consequences for management advice.
+Five methods for estimating parameter uncertainty were considered, i.e. the bootstrap, jack knife, Bayesian estimation using Markov 
+Chain Monte Carlo (MCMC) simulation, the delta method and likelihood profiling.
+The analysis will evaluate the power to detect changes in absolute and relative estimates of stock biomass and fishing mortality
+of a HCR. 
+
+\subsection{Elasticity Analysis}
+
+There is a need to have a simple way to compare the impact of uncertainty on the K2SM, see \citepscrs{kell2013elasalbn}.
+The methodology in this paper was proposed to be written up as a peer review paper for Sc. Marina. \citeppeerInprep{inprep2014elasticity}.
+
+\newpage\clearpage
+\section{Software}
+\bibliographystylesoftware{abbrvnat}
+\bibliographysoftware{refs}
+
+\section{Papers in Preparation}
+\bibliographystylescrsInprep{abbrvnat}
+\bibliographyscrsInprep{refs}
+
+\bibliographystylepeerInprep{abbrvnat}
+\bibliographypeerInprep{refs}
+
+\newpage\clearpage
+\section{References}
+\bibliographystylescrs{abbrvnat}
+\bibliographyscrs{refs}
+
+\bibliographystylepeer{abbrvnat}
+\bibliographypeer{refs}
+
+\newpage
+\section{SCRS Workplans}
+
+\subsection{Albacore}
+
+In 2013, the North and South albacore stocks were evaluated and an interim Limit Reference Point was proposed for the northern stock, as well as several alternative HCRs that allow the Commission to choose desired levels of risk and recovery timeframes. Several models were used, including age structured and statistical catch at age models that required substantial data preparatory work by the Secretariat and other members of the Group. In the process, the Group identified several recommendations for future work that will guide the work of the Group during 2014. The main objective will be to prepare the next assessments for these stocks (not scheduled yet), by reducing uncertainty around datasets and parameters on one hand, and developing robust management procedures that cope with the uncertainty that remains. No inter-sessional meetings are envisaged.
+
+The list of actions, responsibilities and deadlines is as follows:
+\begin{enumerate}[1.]
+\item	Revise North Atlantic size data for Chinese Taipei longliners including all the historical period, and explain the patterns. 
+		Responsibility: Chinese Taipei.Deadline: September 2014. Deliverable: SCRS document.
+\item	Describe North and South spatial dynamics of Japanese and Chinese Taipei longline fisheries, their temporal changes and analyze their effect on the standardized CPUE series.
+		Responsibility: Japan and Chinese Taipei. Deadline: September 2014. Deliverable: SCRS document.
+\item	Complete and revise French mid-water trawl historical series of catch, effort, catch at size, geographical distribution and other related information.
+		Responsibility: EU-France. Deadline: July 31, 2014. Deliverable: SCRS document.
+\item	Further elaborate North Atlantic albacore MSE framework to consider a broader range of uncertainties and test alternative management procedures against different indicators. 
+This will allow simplifying the process of updating management advice, as well as enhancing dialogue with the Commission on the most robust HCRs.
+	Responsibility: EU-Spain, with involvement from the Secretariat and collaboration with the Swordfish Working Group. Deadline: September 2014. Deliverable: SCRS document.
+\item	Revise the Albacore Research Program goals, structure and budget, and establish priorities. Responsibility:Albacore Species Group. Deadline: September 2014.
+\item	Collate Mediterranean albacore biological data that have likely been collected in different data collection programs (e.g. EU/DCR). Also, to the extent possible, extend back in time the available CPUE series. Responsibility: CPCs. Deadline: September 2014. Deliverable: SCRS document.
+\item	Development and testing of data poor methods for data poor stocks (i.e., Mediterranean albacore).Responsibility:EU-Spain, with involvement from the Secretariat.Deadline: September 2014. Deliverable: SCRS document.
+\end{enumerate}
+
+
+\newpage
+\subsection{Swordfish}
+
+
+Assessments for North and South Atlantic swordfish were conducted in 2013. The next assessment is proposed for 2016. 
+
+For the Mediterranean stock, the last assessment was conducted in 2010. The next assessment should take place during 2014, using data up to 2013 to allow a preliminary evaluation of the imposed management measures after 2008.
+
+Proposed work
+
+A list of recommended work has been provided in the Report of the 2013 ICCAT Atlantic Swordfish Stock Assessment Session (SCRS/2013/019). Among those recommendations, the following were identified as high priority areas where continued efforts are required:
+
+Catch and effort data and reporting deadlines
+
+All countries catching swordfish (directed or by-catch) should report catch, catch-at-size (by sex) and effort statistics by a small an area as possible, and by month. These data must be reported by the ICCAT deadlines, even when no analytical stock assessment is scheduled. Historical data should also be provided.
+
+CPUE series
+
+It is recommended that scientists from Japan, ChineseTaipei, Canada, Spain, Portugal and the United States (North Atlantic) and Japan, ChineseTaipei, Spain, Uruguay and Brazil (South Atlantic), as well as any others CPCs, coordinate their work before the meeting (possibly using videoconference), with the goal of updating the index prior next assessment (or presenting the results as document at 2014 SCRS meeting). Future data preparatory meetings should focus on resolving the conflicting indices to the extent possible prior to the next assessment. Consideration should be given to aggregating the CPUE trends by area (rather than the current method of aggregating by nation). For the South Atlantic in particular, some attempt should be made to use stock assessment methods that can reconcile the contradictory trends in the target and by-catch CPUE series for the south (e.g., age/spatially-structured models).
+
+Discards
+
+Information on the number of fish caught, and the numbers discarded (dead and released alive) should be reported in order to quantify discarding in all months and areas so that the effect of discarding and releasing can be fully included in the next stock assessment. These data must be reported by the ICCAT deadlines for submission of Task I and II data.
+Target species
+
+All fleets should record detailed information on log records to quantify which species or species-group is being targeted. Compilation of detailed gear characteristics and fishing strategy information (including time of set) are very strongly recommended in order to improve CPUE standardization.The Group recommended the investigation of alternative forms of analyses in the South Atlantic, that deal with both the By-catch and Target patterns, such as age- and spatially-structured models. Results should be presented as documents at 2014 SCRS meeting.
+
+Weight-length relationships
+
+The Group recognized thatthe newly-adopted length-weight relationships for swordfish require validation with new field information. National scientists are requested to collect and submit observed values of length (LJFL) and round weight data to the Secretariat to facilitate this task.
+
+
+\subsubsection{South Atlantic Swordfish Research Plan} 
+
+Given the poor understanding of population dynamics of swordfish in the South Atlantic, the Group should develop a long term plan for an enhanced program of research, focusing on independent estimates of fishing mortality, fraction mature by age, growth by sex and stock, movement and migrations, and improving available indices of abundance. Within the context of the SCRS Strategic Plan, this deficiency could be addressed.
+
+Environmental effects
+
+Given the possibility of spatial and environmental effects being partially responsible for the conflicting directions of some of the influential indices of abundance, the Group should further study into this hypothesis during the coming year, use existing PSAT data to compliment this work, and to determine how best to formally including these environmental covariates into the overall assessment process. The United States is willing to take a lead role in this investigation and likely collaborators would include scientist from Canada, Japan, and Spain as their indices were the most appropriate for this work. Moreover, the review of historical size data and fishery data is necessary to decide appropriate modelling structure, which should be conducted by national scientists and the ICCAT Secretariat. Expected deliverables would include quantified reduction in the conflicting indices of abundance from the temperate and tropic regions, which in turn should lead to a more stable assessment. Other products could include an increased understanding of the distribution of Swordfish and perhaps a revisiting of the geographic structure of the data and the assessment. These works should be done before the next stock assessment.
+
+Informative priors for carrying capacity
+
+Given the sensitivity of assessment results in general to prior distributions for carrying capacity in situations where the data are uninformative, the group recommends that informative priors for K be developed based upon factors such as habitat area, population density and other life history factors. While borrowing a prior based upon the posterior for K from another assessment, e.g. using the posterior for K from the North for the South may be scientifically justified; the Group recommends that future decisions such as this be based upon scientific analyses similar to the development of a prior for r.
+
+\subsubsection{Mediterranean}
+
+Past considerations relevant to the 2014 stock assessment
+
+Catch and effort
+
+All countries catching swordfish (directed or by-catch) should report catch, catch-at-size (ideally by sex) and effort statistics by as small an area as possible (2x2 degree rectangles for longline, and 1x1  degree rectangles for other gears), and by month, particularly for the major fleets.
+Responsibility:All CPCs;Deadline:one month prior to the meeting.
+
+
+Discards
+
+It is recommended that at least the order of magnitude of unreported catches and discards be estimated by major fleets.
+Responsibility:All CPCs;Deadline:one month prior to the meeting.
+
+CPUE indexes
+
+The Group notes that it is important to collect size data together with the catch and effort data to provide meaningful CPUEs by biomass and age for the major fleets.
+Responsibility:national scientists;Timeframe:15 days prior to the meeting.
+
+Gear selectivity studies
+
+Although some work has been already done, further research on gear design and use is encouraged in order to minimize catch of age-0 swordfish and increase yield and spawning biomass per recruit from this fishery.Responsibility:national scientists;Timeframe:15 days prior to the meeting.
+
+Stock mixing and management boundaries
+
+Considering differences in the catch and CPUE patterns between different Mediterranean fisheries, further research, including tagging investigations, in defining temporal variations in the spatial distribution pattern of the stock will help to improve stock assessment and management.
+Responsibility:national scientists;Timeframe:15 days prior to the meeting.
+
+Other considerations relevant to the Mediterranean stock assessment
+
+Alternative Stock Assessment Models
+
+Results of the previous assessment that was based on XSA were highly dependent on the selection of the plus group. The application of additional methods should be explored based on the trials made during the 2013 assessment of the Atlantic stocks. 
+Responsibility:Secretariat and national scientists;Timeframe:during the meeting.
+
+
+Participation
+
+Participation in the Swordfish Species Group has been problematic in recent years. The Group recommends that CPCs that can make valuable contributions to the assessment make the necessary arrangements to ensure the presence of their national scientists at the assessment meeting.
+Responsibility:CPCs and national scientists;Timeframe:15 days prior to the meeting.
+
+
+\newpage
+\subsection{Working Group on Stock Assessment Methods}
+
+The Working Group discussed the future work plan and retained mainly the following actions:
+\begin{enumerate}[1.]
+\item WGSAM recommends reviewing the protocols and algorithms for estimating Effort distribution (5x5) for longline (EFFDIS), and extended to purse seine and baitboat gears, currently prepared by the Secretariat. The Working Group should also include estimates of uncertainty on these products. It is suggested that published estimates in the ICCAT Web page, include also detailed description of the estimate assumptions and uncertainty related to these products to make aware the potential users of their limitations.
+\item The Commission expects risk-based advice on management measures as prescribed in the Kobe II Strategy Matrix and as embedded in its Decision Framework (Rec. 11-13). An important aspect of providing such scientific advice is adequate quantification of uncertainty in stock condition and future prospects under future management option scenarios. With the advent of more commonly applied, highly parameterized stock assessment models, the computational investment in quantifying uncertainty in stock status and future prospects is quite heavy. This is also the experience at other tRFMOs and a number of approximations for quantifying both process and observational uncertainty are being applied to develop risk-based management advice. Guidance on the evolution of and possibility of harmonizing methods to apply for uncertainty characterization across species groups should be provided by WGSAM.
+\item Including during the agenda items of 2014 some of the Horizontal Themes identified during the process of elaborating the SCRS Strategic Plan in 2013, particularly those related to participation and capacity building and quality control of the stock assessments and management advice.
+\item WGSAM recognized that there is a trend in recent assessments conducted by the SCRS to use multiple modelling methods to estimate the status of the stock relative to ICCAT conservation benchmarks. While WGSAM agrees the use of multiple approaches is a good practice, situations have arisen where the different methods give results that are not consistent yet equally plausible. Having guidance from the WGSAM on best practices to reconcile or combine such results would be very helpful (see, for example, ICES 2007).
+\item The evaluation of Limit Reference Points (LRP) and Harvest Control Rules (HCR) through the  use of Management Strategy Evaluation (MSE) is increasingly 
+being recognized by global tuna RFMOs as an effective means to advance their fishery management process.
+The 2013 assessments of albacore and swordfish were used as examples of how an MSE process could possibly be 
+formally included in the management of those stocks.
+The WGSAM plans to continue this effort by 
+
+\begin{enumerate}[(1)]
+\item continuing to refine the methods within the MSE process, 
+\item introduce MSE more assessments when and where appropriate, and 
+\item foster lines of communication that keep managers informed of their benefits and weaknesses.
+\end{enumerate}
+\end{enumerate}
+
+\newpage\printglossaries
+
+
+\newpage
+\subsection{Work Plan of the Sub Committee on Statistics}
+
+\begin{enumerate}
+ \item 	A methodology is formulated to identify better ways to characterize uncertainty in unquantifiable aspects of data submissions (related to quality control). This should be done in a way that builds upon the SCRS capacity to advise the Commission on how this uncertainty impacts the scientific advice for fishery management that can be provided. Subsequent to the Sub-Committee meeting, an ad hoc Working Group met to initiate work on this topic and made some progress. In order to further this work, an inter-sessional discussion on refining the methodology and evaluating additional methods to characterize this uncertainty will be held. The agenda for this discussion will be developed intersessionally.
+ \item 	More focused discussions on artisanal fisheries be conducted intersessionally Strategic investments in the short-term may make improvements, but more discussion needs be carried out to avoid duplication and improve utility. Generally these fisheries do not have by-catch or discards and are usually multi-specific. These discussions should draw on expertise of other sub-regional and regional management bodies and evaluate how best to coordinate with other on-going initiatives. The first step in focusing this discussion is to develop an inventory of the recent and on-going initiatives to improve artisanal fishery data collection activities amongst the CPCs. It is recommended that a contract be made to develop such an inventory.
+\end{enumerate}
+
+
+\end{document}

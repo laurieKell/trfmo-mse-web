@@ -1,0 +1,78 @@
+This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: scrsInprep.aux
+The style file: abbrvnat.bst
+Database file #1: refs.bib
+I was expecting a `,' or a `}'---line 2550 of file refs.bib
+ :   
+ :   title={Report of the Working Group on the assessment of demersal stocks in the North Sea and
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 2558 of file refs.bib
+ :   
+ :   title={Report of the herring assessment Working Group for the area south of 62 N. ICES CM 2009/ACOM:03},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 3571 of file refs.bib
+ : 
+ : %  title={},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Too many commas in name 1 of "Merino, G., De Bruyn, P. and Arrizabalaga, H. and Ortiz de Urbina, J-M. and Kell, {L.T.}" for entry kell2015msealbn
+while executing---line 1347 of file abbrvnat.bst
+Too many commas in name 1 of "Merino, G., De Bruyn, P. and Arrizabalaga, H. and Ortiz de Urbina, J-M. and Kell, {L.T.}" for entry kell2015msealbn
+while executing---line 1347 of file abbrvnat.bst
+Name 1 in "et al.," has a comma at the end for entry inprep2015swom
+while executing---line 1347 of file abbrvnat.bst
+Name 1 in "et al.," has a comma at the end for entry inprep2015swom
+while executing---line 1347 of file abbrvnat.bst
+Name 1 in "et al.," has a comma at the end for entry inprep2015swom
+while executing---line 1429 of file abbrvnat.bst
+Name 1 in "et al.," has a comma at the end for entry inprep2015swom
+while executing---line 1429 of file abbrvnat.bst
+Too many commas in name 1 of "Merino, G., De Bruyn, P. and Arrizabalaga, H. and Ortiz de Urbina, J-M. and Kell, {L.T.}" for entry kell2015msealbn
+while executing---line 1429 of file abbrvnat.bst
+Too many commas in name 1 of "Merino, G., De Bruyn, P. and Arrizabalaga, H. and Ortiz de Urbina, J-M. and Kell, {L.T.}" for entry kell2015msealbn
+while executing---line 1429 of file abbrvnat.bst
+You've used 2 entries,
+            2773 wiz_defined-function locations,
+            603 strings with 4828 characters,
+and the built_in function-call counts, 960 in all, are:
+= -- 81
+> -- 49
+< -- 1
++ -- 17
+- -- 15
+* -- 83
+:= -- 153
+add.period$ -- 6
+call.type$ -- 2
+change.case$ -- 11
+chr.to.int$ -- 2
+cite$ -- 4
+duplicate$ -- 41
+empty$ -- 82
+format.name$ -- 17
+if$ -- 196
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 2
+newline$ -- 18
+num.names$ -- 8
+pop$ -- 19
+preamble$ -- 1
+purify$ -- 9
+quote$ -- 0
+skip$ -- 30
+stack$ -- 0
+substring$ -- 46
+swap$ -- 2
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 22
+warning$ -- 0
+while$ -- 8
+width$ -- 0
+write$ -- 33
+(There were 11 error messages)

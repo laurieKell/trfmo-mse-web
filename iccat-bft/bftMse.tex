@@ -1,0 +1,165 @@
+\documentclass[a4paper,10pt]{article}
+%\documentclass[a4paper,10pt]{scrartcl}
+
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate}	
+\usepackage{graphicx}
+\usepackage{pdfpages}
+
+\usepackage[acronym,toc]{glossaries} % nomain, if you define glossaries in a file, and you use \include{INP-00-glossary}
+\input{glossary.tex}
+\makeglossaries
+
+\usepackage{hyperref}	
+
+\usepackage{multibib}
+\usepackage[authoryear, round]{natbib}
+
+\newcites{peer}{Peer Review}
+\newcites{scrs}{SCRS}
+\newcites{peerInprep}{Peer Review}
+\newcites{scrsInprep}{SCRS}
+\newcites{software}{R Packages}
+
+
+\title{GBYP MSE}
+
+\begin{document}
+\maketitle
+
+This document summarises work being conducted in relation to the \gls{MSE} tasks identified at the  
+\textbf{Meeting on Bluefin Stock Assessment Methods} (Gloucester, Massachusetts, United States July 20 to 22, 2013).
+
+A variety of papers have been written or will be written on \gls{RA} and the MSE.  The objective of this document is to identify and propose collaborative 
+papers (SCRS and \textbf{peer-reviewed}) to take this work forward and provide a bibliography.
+
+MSE work being conducted for by the SCRS for other stocks summarised in a separate document.
+
+All software and code will be open source and made available on the \href{http://rscloud.iccat.int}{ICCAT cloud server} to 
+allow collaborative working both within the SCRC and between the scientific committees of other \glspl{RFMO}
+
+\tableofcontents
+
+\subsection{Risk Analysis}
+
+A qualitative Risk Assessment has been conducted with members of the SCRS and the Commission under
+Phases II and III; under Phases IV and subsequent phases the intention is to conduct quantitative analyses
+to identify the main sources of uncertainty that should be developed as \glspl{OM} and 
+then to review the process.
+
+There are a variety of quantitative techniques that could be applied, from the relatively simple (e.g. elasticity and sensitivity analyses)
+to complex approaches such as MSE. In the first instance it is intended to use a range of simple techniques to identify scenarios for use in the 
+MSE. The approaches will then be reviewed in a peer review paper. 
+
+Various papers peer review papers are being written and planed under the the GBYP, i.e.
+papers i) reviewing historical sources of uncertainty considered \citepeer{fromentin2014spectre}
+ii) Identification and prioritisation of uncertainties \citepeerInprep{leach2014elicit};
+iii) Identification of the major sensitivities \citescrs{kell2014sense}; iv)  
+simple methods based on life history relationships \citepeerInprep{kellInprepElas};
+vii) a comparison of the relative importance of the values of information and control \citepeerInprep{gbypInprep1}; and 
+iv) a review Paper summarising the lessons learnt \citepeerInprep{gbypInprep2}.
+
+\subsection{MSE}
+
+The Relative Value-of-Information for Model Based and Empirical Management Procedures:  A Mediterranean bluefin example 
+\citescrs{bft2014afsmse}. 
+
+
+\subsubsection{Operating Model}
+
+Which Came First? The Chicken, The Egg or The Tortilla \citescrs{kell2014srr}.
+
+Population and Stock Hypotheses for North Atlantic Bluefin Tuna \citescrs{kell2014pop}.
+A Comparison of Model Based and Model Free Harvest Control Rules Using Management Strategy Evalution For North Atlantic Bluefin Tuna 
+\citescrs{kell2014mp}.
+
+ 
+\subsubsection{Management Proceedure}
+
+A Comparison of Model Based and Model Free Harvest Control Rules Using Management Strategy Evalution For North Atlantic Bluefin Tuna
+\citescrs{kell2014mp}
+
+\newpage\clearpage
+\section{Software}
+\bibliographystylesoftware{abbrvnat}
+\bibliographysoftware{refs}
+
+\section{Papers in Preparation}
+\bibliographystylescrsInprep{abbrvnat}
+\bibliographyscrsInprep{refs}
+
+\bibliographystylepeerInprep{abbrvnat}
+\bibliographypeerInprep{refs}
+
+\newpage\clearpage
+\section{References}
+\bibliographystylescrs{abbrvnat}
+\bibliographyscrs{refs}
+
+\bibliographystylepeer{abbrvnat}
+\bibliographypeer{refs}
+
+
+\section{Glossary}
+\newpage\printglossaries
+
+
+\newpage
+\section{GBYP Modelling Tasks}
+Identified at Gloucester, Massachusetts, United States – July 20 to 22, 2013
+
+\input{tasks.tex}
+
+\newpage
+\section{Data Preparatory Meeting} 
+(Madrid, Spain - May 5 to 10, 2014)
+
+\input{dataPrep.tex}
+
+\end{document}
+
+
+\clearpage\newpage
+\section{Work in Progress}
+
+A variety of tasks were proposed at GBYP Modelling for by year to take the work forward.
+
+\begin{enumerate}[2013]
+ \item 
+\begin{enumerate}
+\item Discussion of alternative mixing structures in broad terms SCRS paper with key contributors. 
+%\textbf{[SCRS paper 1]}
+\item Clarification of standard inputs to standard separate west/east assessments. Use ICCAT meeting to facilitate with those most familiar with data (Terms of Reference document). Table of information available 
+%\textbf{[?]}
+\item Clarification on data availability for mixing and stock structure related data for more complex stock assessments. Genetic, microconstituents, tags (archival, conventional, other) 
+%\textbf{[SCRS paper 1]}
+\item Identification of major sensitivities for both separate and mixed stock assessments (e.g., M, fecundity schedule, SRR and alternative mechanism of population regulation) 
+%\textbf{[SCRS paper 1, Peer Review Paper 1, Peer Review Paper 2]}
+\item Use Risk assessment paper on qualitative identification of uncertainty (written under GBYP modelling contract) to inform OM scenarios, i.e., SCRS paper with key contributors. 
+%\textbf{[Peer Review Paper 1, GBYP Contract I]}
+\item Identification of those who will be taking both assessment approaches further forward Consistent, core group over a multi-year timeline 
+%\textbf{[?]}
+\item Support capacity development for conduct, understanding and use of MSE in adoption of Harvest Control Rules for the Atlantic bluefin fisheries through:
+\begin{enumerate}
+\item ICES/ICCAT MSE training in (Dec. 2013) to facilitate capacity building for CPC scientific delegations; 
+%\textbf{[ICES/ICCAT Training Course]}
+\item Take advantage of GEF/FAO Areas Beyond National Jurisdiction Tuna Program funds intended to accelerate the joint tuna RFMO working group for MSE development and management /stakeholder / science (jargon-free) dialogue. 
+%\textbf{[wait and see]}
+\item Conduct a ‘side event’(SCRS Chairman to co-ordinate) at the 2013 Commission meeting open to CPCs and stakeholder groups, drawing upon the experience at CCSBT to initiate the management / science/ stakeholder dialogue. 
+%\textbf{[!]}
+\end{enumerate}
+\end{enumerate}
+
+\item
+
+For bluefin session
+\begin{enumerate}
+\item Eastern assessment update 
+Post-bluefin; ideally follows bluefin session
+\item Review of updated separate assessment approaches
+\item Review of initial mixed stock models and refinement of alternative mixing structure scenarios
+\item Tool for visualizing movement
+\item Meeting including stakeholders (finalise at 2013 Commission meeting)
+\end{enumerate}
+\end{enumerate}
+

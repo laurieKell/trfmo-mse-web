@@ -1,0 +1,53 @@
+\begin{thebibliography}{6}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Kell and De~Bruyn(2013)]{kell2013elasalbn}
+L.~Kell and P.~De~Bruyn.
+\newblock Management strategy evaluation framework for north atlantic albacore.
+\newblock \emph{{ICCAT} Collect. Vol. Sci. Pap.}, 69\penalty0 (43):\penalty0
+  2045--2051, 2013.
+
+\bibitem[Kell et~al.(2013{\natexlab{a}})Kell, Merino, De~Bruyn, and Ortiz~de
+  Urbina]{kell2013fwd}
+L.~Kell, G.~Merino, P.~De~Bruyn, and J.~Ortiz~de Urbina.
+\newblock Implementation of a harvest control rule for northern atlantic
+  albacore.
+\newblock \emph{{ICCAT} Collect. Vol. Sci. Pap.}, 69\penalty0 (150):\penalty0
+  xxx--xxx, 2013{\natexlab{a}}.
+
+\bibitem[Kell et~al.(2013{\natexlab{b}})Kell, Merino, De~Bruyn, Ortiz~de
+  Urbina, Arrizabalaga, Santiago, and Murua]{kell2013mpalbn}
+L.~Kell, G.~Merino, P.~De~Bruyn, J.~Ortiz~de Urbina, H.~Arrizabalaga,
+  J.~Santiago, and H.~Murua.
+\newblock An example of a management procedure based on a biomass dynamic stock
+  assessment model.
+\newblock \emph{{ICCAT} Collect. Vol. Sci. Pap.}, 69\penalty0 (33):\penalty0
+  xxx--xxx, 2013{\natexlab{b}}.
+
+\bibitem[Kell et~al.(2013{\natexlab{c}})Kell, Merino, De~Bruyn, Ortiz~de
+  Urbina, Arrizabalaga, Santiago, and Murua]{kell2013msealbn}
+L.~Kell, G.~Merino, P.~De~Bruyn, J.-M. Ortiz~de Urbina, H.~Arrizabalaga,
+  J.~Santiago, and H.~Murua.
+\newblock An example management strategy evaluation of a harvest control rule.
+\newblock \emph{{ICCAT} Collect. Vol. Sci. Pap.}, 69\penalty0 (35):\penalty0
+  xxx--xxx, 2013{\natexlab{c}}.
+
+\bibitem[Kell et~al.(2013{\natexlab{d}})Kell, Ortiz~de Urbina, De~Bruyn,
+  Mosqueira, and Magnusson]{kell2013uncert}
+L.~Kell, J.~Ortiz~de Urbina, P.~De~Bruyn, I.~Mosqueira, and A.~Magnusson.
+\newblock A evaluation of different approaches for modelling uncertainty in
+  aspic and biomass dynamic models.
+\newblock \emph{{ICCAT} Collect. Vol. Sci. Pap.}, 69\penalty0 (117):\penalty0
+  xxx--xxx, 2013{\natexlab{d}}.
+
+\bibitem[Kell et~al.(2014)Kell, Fromentin, and Szuwalski]{kell2014srr}
+L.~Kell, J.~Fromentin, and C.~Szuwalski.
+\newblock Which came first? the chicken, the egg or the tortilla.
+\newblock \emph{{ICCAT} Collect. Vol. Sci. Pap.}, 69\penalty0 (25):\penalty0
+  xxx--xxx, 2014.
+
+\end{thebibliography}

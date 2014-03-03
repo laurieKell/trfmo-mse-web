@@ -1,0 +1,30 @@
+\begin{thebibliography}{3}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Fromentin et~al.(2014)Fromentin, Bonhommeau, Arrizabalaga, and
+  L.~Kell]{fromentin2014spectre}
+J.-M. Fromentin, S.~Bonhommeau, H.~Arrizabalaga, and L.~L.~Kell.
+\newblock The spectre of uncertainty in management of exploited fish stocks:
+  the illustrative case of atlantic bluefin tuna.
+\newblock \emph{Marine Policy}, 47:\penalty0 8--14, 2014.
+
+\bibitem[Garcia(1996)]{garcia_precautionary_1996}
+S.~Garcia.
+\newblock The precautionary approach to fisheries and its implications for
+  fishery research, technology and management: an updated review.
+\newblock \emph{{FAO} Fisheries Technical Paper}, pages 1--76, 1996.
+
+\bibitem[Kell et~al.(2007)Kell, Mosqueira, Grosjean, Fromentin, Garcia,
+  Hillary, Jardim, Mardle, Pastoors, Poos, et~al.]{kell_flr:_2007}
+L.~Kell, I.~Mosqueira, P.~Grosjean, J.~Fromentin, D.~Garcia, R.~Hillary,
+  E.~Jardim, S.~Mardle, M.~Pastoors, J.~Poos, et~al.
+\newblock {FLR:} an open-source framework for the evaluation and development of
+  management strategies.
+\newblock \emph{{ICES} Journal of Marine Science: Journal du Conseil},
+  64\penalty0 (4):\penalty0 640, 2007.
+
+\end{thebibliography}
