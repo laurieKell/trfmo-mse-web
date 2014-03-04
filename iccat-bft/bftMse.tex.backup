@@ -1,4 +1,4 @@
-  \documentclass[a4paper,10pt]{article}
+\documentclass[a4paper,10pt]{article}
 %\documentclass[a4paper,10pt]{scrartcl}
 
 \usepackage[utf8]{inputenc}
@@ -53,7 +53,7 @@ MSE. The approaches will then be reviewed in a peer review paper.
 
 Various papers peer review papers are being written and planed under the the GBYP, i.e.
 papers i) reviewing historical sources of uncertainty considered \citepeer{fromentin2014spectre}
-ii) Identification and prioritisation of uncertainties \citepeer{leach2014elicit};
+ii) Identification and prioritisation of uncertainties \citepeerInprep{leach2014elicit};
 iii) Identification of the major sensitivities \citescrs{kell2014sense}; iv)  
 simple methods based on life history relationships \citepeerInprep{kellInprepElas};
 vii) a comparison of the relative importance of the values of information and control \citepeerInprep{gbypInprep1}; and 
