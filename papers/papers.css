@@ -16,13 +16,11 @@ BIG.HUGE		{ font-size : larger   }
 BIG.XHUGE		{ font-size : xx-large }
 
 /* heading styles */
-body {color:blue;}
-h1 {color:#00ff00;}
-h2 {color:rgb(255,0,0);}
+H1		{  }
+H2		{  }
 H3		{  }
 H4		{  }
 H5		{  }
-
 
 /* mathematics styles */
 DIV.displaymath		{ }	/* math displays */
@@ -31,5 +29,4 @@ TD.eqno			{ }	/* equation-number cells */
 
 /* document-specific styles come next */
 DIV.navigation		{   }
-SPAN.textbf		{ font-weight: bold  }
 SPAN.arabic		{   }
