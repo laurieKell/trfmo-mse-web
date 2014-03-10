@@ -1,0 +1,39 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage[authoryear, round]{natbib}
+
+% Title Page
+\title{}
+\author{}
+
+\begin{document}
+\maketitle
+
+There are various glossaries related to MSE, stock assessment and risk.
+ 
+\section{MSE}
+ 
+  R4MFCL      \url{https://http://code.google.com/p/r4mfcl/source/checkout}  \\
+  SS          \url{https://github.com/tRFMO-MSE} \\
+  R4SS        \url{http://cran.r-project.org/web/packages/r4ss}  \\
+  Multifan-CL \url{http://www.multifan-cl.org} \\
+    
+\section{tRFMOs}
+
+  CCSBT \url{http://cran.r-project.org/web/packages/kobe}\\ 
+  IATTC \url{http://cran.r-project.org/web/packages/kobe}\\
+  ICCAT \url{http://www.iccat.int/Documents/SCRS/Other/glossary.pdf}\\
+  IOTC  \url{http://www.iotc.org/files/proceedings/2012/sc/IOTC-2012-SC15-INF03.pdf}\\
+  WCPFC \url{http://cran.r-project.org/web/packages/kobe}\\
+  
+\section{Risk}
+
+  ISO 31000:2009 \url{http://www.iso.org/iso/catalogue_detail?csnumber=43170}
+
+
+
+\bibliographystyle{abbrvnat}
+\bibliography{refs}
+
+\end{document}          

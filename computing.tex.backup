@@ -1,0 +1,16 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage[authoryear, round]{natbib}
+
+% Title Page
+\title{Bibliography}
+\author{}
+
+\begin{document}
+\maketitle
+
+This document will provides a bibliography in Zortero on MSE, it will include relevant peer review and grey literature.
+
+  
+\end{document}          
